@@ -8,8 +8,6 @@
   },
   "dependencies": {
     "@zeppos/zml": "^0.0.39"
-  },
-  "devDependencies": {
-    "@zeppos/zeus-cli": "^1.9.3"
   }
 }
+
