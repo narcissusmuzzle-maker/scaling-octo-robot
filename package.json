@@ -1,0 +1,15 @@
+{
+  "name": "u613-amazfit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "U613 для Amazfit Bip Max (Zepp OS): связь часов с приложением LuvU613",
+  "scripts": {
+    "build": "zeus build"
+  },
+  "dependencies": {
+    "@zeppos/zml": "^0.0.39"
+  },
+  "devDependencies": {
+    "@zeppos/zeus-cli": "^1.9.3"
+  }
+}
