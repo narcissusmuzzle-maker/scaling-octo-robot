@@ -13,6 +13,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
+      # zeus-cli нельзя ставить как зависимость проекта (падает с "Cannot find module 'zeppos-app-utils'"),
+      # поэтому ставим его глобально, а `npm run build` вызывает его из PATH.
+      - name: Установка zeus-cli глобально
+        run: npm install -g @zeppos/zeus-cli@1.9.3
       - name: Сборка, пакеты и QR-коды
         id: pack
         uses: nailujx86/zeppos-release-action@v1
